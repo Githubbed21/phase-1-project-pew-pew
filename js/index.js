@@ -13,7 +13,7 @@ const apiHeader = {
       body: JSON.stringify(bodyObj)
     }).then(resp => resp.json())
   }
-  const API = (get, patch)
+  const API = {get, patch}
 
   const gunsURL = 'http://localhost:3000/Guns/'
   const listEl = document.querySelector('#list')
@@ -37,6 +37,6 @@ const apiHeader = {
     const img = document.createElement('img')
     img.src = gun.img_url
   }
-  gunNav.append(h2, p, button)
+  gunNav.append()
 
   getAllGuns()
