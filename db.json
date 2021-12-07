@@ -2,83 +2,83 @@
   "Guns":[
     {
       "id": 1,
-      "Type": "Pistol",
-      "Name": "Beretta m9",
+      "type": "Pistol",
+      "name": "Beretta m9",
       "description": "Beretta M9 is a lightweight, semi-automatic pistol. The Beretta M9 has redundant automatic safety features to help prevent unintentional discharges. It is still in use today in the United States armed forces.",
-      "img url": "https://www.filepicker.io/api/file/bcCzaU04R9GQlU77WcfG",
-      "Caliber": "9mm"
+      "img_url": "https://www.filepicker.io/api/file/bcCzaU04R9GQlU77WcfG",
+      "caliber": "9mm"
     },
     {
       "id": 2,
-      "Type": "Pistol",
-      "Name": "colt 1911 commander",
+      "type": "Pistol",
+      "name": "colt 1911 commander",
       "description": "The Colt 1911 is a single-action, semi-automatic, magazine-fed, recoil-operated pistol. It was the main side arm for the United States armed forces until it was replaced by the Beretta m9.",
-      "img url": "https://images.gunsinternational.com/listings_sub/acc_87170/gi_101309216/Colt-1911-Lightweight-Commander-45-ACP-O4860XSE_101309216_87170_867951F04C28C232.jpg",
-      "Caliber": "45 acp"
+      "img_url": "https://images.gunsinternational.com/listings_sub/acc_87170/gi_101309216/Colt-1911-Lightweight-Commander-45-ACP-O4860XSE_101309216_87170_867951F04C28C232.jpg",
+      "caliber": "45 acp"
     },
     {
       "id": 3,
-      "Type": "Pistol",
-      "Name": "Glock 19",
+      "type": "Pistol",
+      "name": "Glock 19",
       "description": "The Glock 19 is one of the most popular handguns of all time. The Glock 19 is a poylmer grip modual with a trigger saftey feature. Although the Glock 19 is marketed as a more compact pistol it still packs 15 rounds of 9mm plus one in the chamber.",
-      "img url": "https://th.bing.com/th/id/R.a8224ba6d0ddf5f5d5ff1a36801968f8?rik=P7k2wUaU9ajSpw&pid=ImgRaw&r=0",
-      "Caliber": "9mm"
+      "img_url": "https://th.bing.com/th/id/R.a8224ba6d0ddf5f5d5ff1a36801968f8?rik=P7k2wUaU9ajSpw&pid=ImgRaw&r=0",
+      "caliber": "9mm"
     },
     {
       "id": 4,
-      "Type": "Pistol",
-      "Name": "Colt python",
+      "type": "Pistol",
+      "name": "Colt python",
       "description": "The Colt Python is a single/double action revolver. The Colt Python is one of the most iconic pistols, commonly featured in western film. ",
-      "img url": "https://th.bing.com/th/id/R.c1b0ad407f38e003609e427300a00ec4?rik=3hgHuQFvPugAwg&pid=ImgRaw&r=0",
-      "Caliber": "357 Magnum"
+      "img_url": "https://th.bing.com/th/id/R.c1b0ad407f38e003609e427300a00ec4?rik=3hgHuQFvPugAwg&pid=ImgRaw&r=0",
+      "caliber": "357 Magnum"
     },
     {
       "id": 5,
-      "Type": "Pistol",
-      "Name": "Sig Sauer p365",
+      "type": "Pistol",
+      "name": "Sig Sauer p365",
       "description": "The Sig p365 is polymer, striker fire pistol with its slide treated with a Nitron finish. It is one of the most impressive pistols of our time. Falling somewhere between compact and sub-compact through its design, sig was able to fit an incredible 15 rounds of 9mm ammo plus one in the chamber in its tiny form.  ",
-      "img url": "https://th.bing.com/th/id/OIP.b_m5Nt-bZ7o4ndTpOOUSbgHaFz?pid=ImgDet&rs=1",
-      "Caliber": "9mm"
+      "img_url": "https://th.bing.com/th/id/OIP.b_m5Nt-bZ7o4ndTpOOUSbgHaFz?pid=ImgDet&rs=1",
+      "caliber": "9mm"
     },
     {
       "id": 6,
-      "Type": "Rifle",
-      "Name": "AR-15",
+      "type": "Rifle",
+      "name": "AR-15",
       "description": "The AR-15 is a lightweight, intermediate cartridge magazine-fed, air-cooled rifle with a rotating lock bolt. Having various uses from hunting to defense it is one of the most popular rifles today. With the abilty to modify it to you own personal specifications.",
-      "img url": "https://th.bing.com/th/id/R.fdcae43942a20b81cae6d4409d4ccabd?rik=yJ1dLUVEGRfkdQ&riu=http%3a%2f%2f2ht1mik98ka4dogie28vqc4y.wpengine.netdna-cdn.com%2fwp-content%2fuploads%2f2017%2f02%2fDD5V1_01d.jpg&ehk=N6C0MjXL2g9F4iVPyDeVGDampjrT%2fP8tmZ5eXJgre4o%3d&risl=&pid=ImgRaw&r=0",
-      "Caliber": "5.56"
+      "img_url": "https://th.bing.com/th/id/R.fdcae43942a20b81cae6d4409d4ccabd?rik=yJ1dLUVEGRfkdQ&riu=http%3a%2f%2f2ht1mik98ka4dogie28vqc4y.wpengine.netdna-cdn.com%2fwp-content%2fuploads%2f2017%2f02%2fDD5V1_01d.jpg&ehk=N6C0MjXL2g9F4iVPyDeVGDampjrT%2fP8tmZ5eXJgre4o%3d&risl=&pid=ImgRaw&r=0",
+      "caliber": "5.56"
     },
     {
       "id": 7,
-      "Type": "Rifle",
-      "Name": "AK-47",
+      "type": "Rifle",
+      "name": "AK-47",
       "description": "The AK-47 or Avtomat Kalashnikova is a gas-operated assault rifle that is chambered for the 7.62×39mm cartridge. This rifle has been used in wars arround the world. It is still the primary weapon of choice for the Middle East, China and Russia.",
-      "img url": "https://fh-sites.imgix.net/sites/1663/2018/08/29161340/shutterstock_102492452_1.jpg?auto=compress%2Cformat&w=700&h=700&fit=max",
-      "Caliber": "7.62x39"
+      "img_url": "https://fh-sites.imgix.net/sites/1663/2018/08/29161340/shutterstock_102492452_1.jpg?auto=compress%2Cformat&w=700&h=700&fit=max",
+      "caliber": "7.62x39"
     },
     {
       "id": 8,
-      "Type": "Rifle",
-      "Name": "Scar 17",
+      "type": "Rifle",
+      "name": "Scar 17",
       "description": "The Scar 17 is a free floating, cold forged barrle that can be chambered in either 5.56 (Scar light) or in 7.62 (NATO 308, Scar heavy) but both are polyomer based. unlike the AR or AK that are mainly steel frame. This rifle is most commonly found in the Special Opperations of our military.",
-      "img url": "https://fnamerica.com/wp-content/uploads/2012/09/SCAR-17S-FDE_Rotators_3-1800x897.png",
-      "Caliber": ".308"
+      "img_url": "https://fnamerica.com/wp-content/uploads/2012/09/SCAR-17S-FDE_Rotators_3-1800x897.png",
+      "caliber": ".308"
     },
     {
       "id": 9,
-      "Type": "Rifle",
-      "Name": ".30-6",
+      "type": "Rifle",
+      "name": ".30-6",
       "description": "The .30-06 Springfield is one of the oldest and most popular cartridges in American firearm’s history.The 30 refers to the caliber of the bullet in inches. The 06 refers to the year the cartridge was adopted, 1906.  Most commonly used for hunting larger game, this round remains stable for up to 3000 yards.",
-      "img url": "https://th.bing.com/th/id/R.63e2338ef635d092e19d5363263480b2?rik=PWOj9zKfo7hkmQ&riu=http%3a%2f%2fmedia.liveauctiongroup.net%2fi%2f20859%2f19846431_2.jpg%3fv%3d8D14AB0D92EC0D0&ehk=BLyZZLSfp5fb24jsgGP%2bq%2bZJkpHup2qPoNRqZJFmtk4%3d&risl=&pid=ImgRaw&r=0", 
-      "Caliber": "30 ot 6"
+      "img_url": "https://th.bing.com/th/id/R.63e2338ef635d092e19d5363263480b2?rik=PWOj9zKfo7hkmQ&riu=http%3a%2f%2fmedia.liveauctiongroup.net%2fi%2f20859%2f19846431_2.jpg%3fv%3d8D14AB0D92EC0D0&ehk=BLyZZLSfp5fb24jsgGP%2bq%2bZJkpHup2qPoNRqZJFmtk4%3d&risl=&pid=ImgRaw&r=0", 
+      "caliber": "30 ot 6"
     },
     {
       "id": 10,
-      "Type":"Rifle",
-      "Name": "Barrett",
+      "type":"Rifle",
+      "name": "Barrett",
       "description": "The Barrett . 50 BMG is commonly used in out military today as a sniper rifle or anti matrial assult with explosive ordiance. This rifle is also avaliable for civilian use. This rifle is capible of making accurate shots up to a mile long with the right person being the trigger. At those distance many other factors come into play such as windage, hummidity and elavation.",
-      "img url": "https://th.bing.com/th/id/R.cae26a3300c4b1a248aa6dfe88467239?rik=wNtusZ%2b599DpTw&pid=ImgRaw&r=0",
-      "Caliber": "12.7×99mm NATO (.50 BMG)"
+      "img_url": "https://th.bing.com/th/id/R.cae26a3300c4b1a248aa6dfe88467239?rik=wNtusZ%2b599DpTw&pid=ImgRaw&r=0",
+      "caliber": "12.7×99mm NATO (.50 BMG)"
     }
   ]
 }
