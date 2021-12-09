@@ -40,3 +40,6 @@ const apiHeader = {
   gunNav.append()
 
   getAllGuns()
+
+
+  // select tag (drop down menu) drop change event-- other things i could do image and name in grid, click on it to drop down description
