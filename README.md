@@ -5,13 +5,14 @@
 ```
 This is a simple website that allows you to learn a information about common weapons.
 This website does this by 
+```
 -Rendering images of guns
 -Allowing you to search between Rifles or Pistols
 -Click on a Weapon of interest
 -Displays a dropdown of its information
 -like the weapon
 -leave a comment on the weapon
-```
+
 ---
 ## Contributors 
 
