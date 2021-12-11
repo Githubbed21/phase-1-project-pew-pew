@@ -4,7 +4,7 @@
 
 ## Usage
 
-```python
+```
 This is a simple website that allows you to learn a information about common weapons.
 This website does this by 
 ```
