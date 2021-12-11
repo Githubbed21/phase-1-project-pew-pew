@@ -1,7 +1,17 @@
 # Project Pew Pew Phase-1 Project
 
 **Version 1.0.0**
-A web page that allows you to see a set of guns, search between pistols or rifles, click on the image then a drop down disciption of the gun will appear that will allow you to like the gun and leave a comment. 
+## Usage
+```
+This is a simple website that allows you to learn a information about common weapons.
+This website does this by 
+-Rendering images of guns
+-Allowing you to search between Rifles or Pistols
+-Click on a Weapon of interest
+-Displays a dropdown of its information
+-like the weapon
+-leave a comment on the weapon
+```
 ---
 ## Contributors 
 
