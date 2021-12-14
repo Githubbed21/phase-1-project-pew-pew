@@ -26,7 +26,7 @@ const apiHeader = {
   feild.onfocus = function() {
     this.setAttribute('placeholder', '');
     this.style.borderColor = '#333';
-    btn.style.display = 'block';
+    // btn.style.display = 'block';
   }
 
   feild.onblur = function() {
