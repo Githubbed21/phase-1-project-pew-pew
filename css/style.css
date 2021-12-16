@@ -3,7 +3,7 @@
   border: grey solid 1px;
   padding: 1rem;
   width: 15rem;
-  height: 25rem;
+  height: 30rem;
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px #e04b52;
@@ -31,11 +31,28 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-/* input [type='submit'] {
-  color: #fff;
-  background-color: #273c75;
-} */
+
 button {
   color: #273c75;
   background-color: transparent;
+}
+
+#searchBar {
+  width: 50%;
+  height: 22px;
+  border-radius: 3px;
+  border: 1px solid #080808;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+#searchWrapper {
+  position: relative;
+}
+
+#searchWrapper::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 15px;
 }
