@@ -93,18 +93,18 @@ const apiHeader = {
     }
     
     
-    // searchBar.addEventListener('keyup', (e) => {
-    //     const searchString = e.target.value.toLowerCase();
-    //     //if searchStr is uppercase -> lowercase
-    //     //if searchStr is lowercase -> lowercase
-    //     const filterGuns = guns.filter((gun) => {
-    //      return (
-    //        guns.name.toLowerCase().includes( searchString) || 
-    //        guns.type.toLowerCase().includes(searchString)
-    //      )
-    //     })
-    //     displayGuns(filterGuns);
-    // })
+    searchBar.addEventListener('keyup', (e) => {
+        const searchString = e.target.value.toLowerCase();
+        //if searchStr is uppercase -> lowercase
+        //if searchStr is lowercase -> lowercase
+        const filterGuns = guns.filter((gun) => {
+         return (
+           guns.name.toLowerCase().includes( searchString) || 
+           guns.type.toLowerCase().includes(searchString)
+         )
+        })
+        displayGuns(filterGuns);
+    })
 
     
   feild.onfocus = function() {
