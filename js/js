@@ -73,28 +73,6 @@ const gunDetails = (gun) => {
     const likeGun = (gun) => {
       return gun.users.find(gunUsr => gunUsr.id === currentUser.id)
     }
-<<<<<<< HEAD
-=======
-    
-    
-    searchBar.addEventListener('keyup', (e) => {
-        const searchString = e.target.value.toLowerCase();
-        //if searchStr is uppercase -> lowercase
-        //if searchStr is lowercase -> lowercase
-        const filterGuns = guns.filter((gun) => {
-         return (
-           guns.name.toLowerCase().includes( searchString) || 
-           guns.type.toLowerCase().includes(searchString)
-         )
-        })
-        displayGuns(filterGuns);
-    })
-
-    
-  feild.onfocus = function() {
-    this.setAttribute('placeholder', '');
-    this.style.borderColor = '#333';
->>>>>>> 5f720738d91efdb45818c897f6122b579b25a956
   }
   
   const makeLi = (ul) => {
