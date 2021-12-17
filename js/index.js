@@ -21,6 +21,7 @@ const gunNav = document.querySelector('#gun-nav')
 const feild = document.querySelector('textarea')
 const backUp = feild.getAttribute('placeholder')
 const btn = document.querySelector('btn')
+const button = document.querySelector('typeclick')
 // const searchBar = document.querySelector('searchbar')
 const currentUser = {'id':1, "username": 'Dean'}
 let gunsUrl = [];
@@ -43,20 +44,9 @@ const typePreview = (type) => {
   li.innerText = type.type
   typeEl.append(li)
 }
-// const list = document.querySelector('.list')
-
-// const gunTypes = (array, element) => {
-//   array.forEach(gun => {
-//     const li = document.createElement('li')
-//     li.textContent = gun.type
-//     element.append(li)
-//   })
-//   }
-// const filteredArray = guns.filter(gun => gun.type === 'pistol')
-// addList(filteredArray, list)
+document.getElementById('type').addEventListener('click', typePreview)
 
 
-  
 
 const gunDetails = (gun) => {
   while (gunNav.firstChild) gunNav.removeChild(gunNav.firstChild)
