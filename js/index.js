@@ -15,6 +15,7 @@ const patch = (url, bodyObj) => {
 }
 const API = {get, patch}
 const gunsURL = 'http://localhost:3000/Guns/'
+const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
 const feild = document.querySelector('textarea')
@@ -29,14 +30,38 @@ const getAllGuns = () => {
 }
 const gunPreview = (gun) => {
   const li = document.createElement('li')
-  li.innerText = gun.name
+  li.innerText = gun.name 
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
 }
+
+const getAllTypes = () => {
+  API.get(gunsURL).then (type => type.forEach(type => typePreview(type)))
+}
+const typePreview = (type) => {
+  const li = document.createElement('li')
+  li.innerText = type.type
+  typeEl.append(li)
+}
+// const list = document.querySelector('.list')
+
+// const gunTypes = (array, element) => {
+//   array.forEach(gun => {
+//     const li = document.createElement('li')
+//     li.textContent = gun.type
+//     element.append(li)
+//   })
+//   }
+// const filteredArray = guns.filter(gun => gun.type === 'pistol')
+// addList(filteredArray, list)
+
+
+  
+
 const gunDetails = (gun) => {
   while (gunNav.firstChild) gunNav.removeChild(gunNav.firstChild)
   const h2 = document.createElement('h2')
-  h2.innerText = gun.name
+  h2.innerText = gun.name  
   const p = document.createElement('p')
   p.innerText = gun.description
   const img = document.createElement('img')
@@ -111,4 +136,5 @@ this.setAttribute('placeholder', backUp)
 }
 const addComment =
 
+getAllTypes()
 getAllGuns()
