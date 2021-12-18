@@ -15,7 +15,7 @@ const patch = (url, bodyObj) => {
 }
 const API = {get, patch}
 const gunsURL = 'http://localhost:3000/Guns/'
-typeSet = 'Pistol'
+var typeSet = 'All'
 const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
@@ -24,12 +24,11 @@ const backUp = feild.getAttribute('placeholder')
 const btn = document.querySelector('btn')
 // const searchBar = document.querySelector('searchbar')
 const currentUser = {'id':1, "username": 'Dean'}
-let gunsUrl = [];
+
 
 const getAllGuns = () => {
   API.get(gunsURL).then(guns => guns.forEach(gun => gunPreview(gun)))
 }
-
 
 
 const gunPreview = (gun) => {
@@ -38,12 +37,14 @@ if (typeSet == "All") {
   li.innerText = gun.name 
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
+//  console.log(gun.name);
 }
   else if (gun.type == typeSet) {
   const li = document.createElement('li')
   li.innerText = gun.name 
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
+//  console.log(gun.name);
   }
 }
 
@@ -56,24 +57,16 @@ const typePreview = (type) => {
   li.addEventListener('click', () => settheType(type.type))
   typeEl.append(li)
 }
+
 function settheType(arg) {
   
-  let typeSet = arg;
+  typeSet = arg;
   while (listEl.firstChild) listEl.removeChild(listEl.firstChild)
   // return arg
   getAllGuns()
   console.log(typeSet);
 
   }
-
-
-// document.getElementById('type').addEventListener('click', typePreview)
-
-// guns.forEach(typePreview)
-// function logPistols(item){
-//   console.log(item.pistol);
-// }
-
 
 
 const gunDetails = (gun) => {
@@ -152,7 +145,7 @@ feild.onblur = function() {
 this.setAttribute('placeholder', backUp)
 
 }
-const addComment =
+//const addComment =
 
 getAllTypes()
-getAllGuns()
+//getAllGuns()
