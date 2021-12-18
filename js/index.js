@@ -15,7 +15,7 @@ const patch = (url, bodyObj) => {
 }
 const API = {get, patch}
 const gunsURL = 'http://localhost:3000/Guns/'
- typeSet = 'All'
+typeSet = 'Pistol'
 const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
@@ -53,10 +53,21 @@ const getAllTypes = () => {
 const typePreview = (type) => {
   const li = document.createElement('li')
   li.innerText = type.type
+  li.addEventListener('click', () => settheType(type.type))
   typeEl.append(li)
 }
+function settheType(arg) {
+  
+  let typeSet = arg;
+  while (listEl.firstChild) listEl.removeChild(listEl.firstChild)
+  // return arg
+  getAllGuns()
+  console.log(typeSet);
 
-document.getElementById('type').addEventListener('click', typePreview)
+  }
+
+
+// document.getElementById('type').addEventListener('click', typePreview)
 
 // guns.forEach(typePreview)
 // function logPistols(item){
