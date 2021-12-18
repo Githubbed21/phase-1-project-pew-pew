@@ -20,10 +20,10 @@ const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
 const feild = document.querySelector('textarea')
-const backUp = feild.getAttribute('placeholder')
+// const backUp = feild.getAttribute('placeholder')
 const btn = document.querySelector('btn')
 // const searchBar = document.querySelector('searchbar')
-const currentUser = {'id':1, "username": 'Dean'}
+// const currentUser = {'id':1, "username": 'Dean'}
 
 
 const getAllGuns = () => {
@@ -79,16 +79,7 @@ const gunDetails = (gun) => {
   img.src = gun.img_url
   img.width = 480
   img.border = 5
-  
-  const usersUl = document.createElement('ul')
-  usersUl.id = 'users-ul'
-  // button.addEventListener('click', () => handleButtonClick(gun))
-  // gun.users.forEach(gunUser => {
-  //     const li = document.createElement('li')
-  //     li.innerText = gunUser.username
-  //     li.id = `user-${gunUser.id}`
-  //     usersUl.append(li)
-  //   })
+ 
     gunNav.append(img, h2, p)
   }
   
@@ -122,30 +113,8 @@ const gunDetails = (gun) => {
     foundLi.remove()
   }
 
-//   searchBar.addEventListener('keyup', (e) => {
-//     const searchString = e.target.value.toLowerCase();
-//     //if searchStr is uppercase -> lowercase
-//     //if searchStr is lowercase -> lowercase
-//     const filterGuns = guns.filter((gun) => {
-//      return (
-//        guns.name.toLowerCase().includes( searchString) || 
-//        guns.type.toLowerCase().includes(searchString)
-//      )
-//     })
-//     displayGuns(filterGuns);
-// })
 
-
-feild.onfocus = function() {
-this.setAttribute('placeholder', '');
-this.style.borderColor = '#333';
-}
-
-feild.onblur = function() {
-this.setAttribute('placeholder', backUp)
-
-}
 //const addComment =
 
 getAllTypes()
-//getAllGuns()
+getAllGuns()

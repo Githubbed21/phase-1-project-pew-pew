@@ -1,7 +1,15 @@
+body {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+/*
+
 #type-pane {
   border: 2px solid #333;
   padding: 10px 10px;
   box-shadow: 3px 4px grey;
+  cursor: pointer;
 }
 
 #list-panel {
@@ -13,6 +21,7 @@
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px #e04b52;
+  cursor: pointer;
 }
 .container {
   border: 2px solid #333;
@@ -42,8 +51,9 @@ button {
   color: #273c75;
   background-color: transparent;
 }
+*/
 
-#searchBar {
+/* #searchBar {
   width: 50%;
   height: 22px;
   border-radius: 3px;
@@ -61,4 +71,4 @@ button {
   position: absolute;
   top: 2px;
   right: 15px;
-}
+} */
