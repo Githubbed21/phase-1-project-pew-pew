@@ -15,7 +15,7 @@ const patch = (url, bodyObj) => {
 }
 const API = {get, patch}
 const gunsURL = 'http://localhost:3000/Guns/'
-const typeSet = 'Rifle'
+ typeSet = 'All'
 const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
@@ -33,8 +33,13 @@ const getAllGuns = () => {
 
 
 const gunPreview = (gun) => {
-
-  if (gun.type == typeSet) {
+if (typeSet == "All") {
+  const li = document.createElement('li')
+  li.innerText = gun.name 
+  li.addEventListener('click', () => gunDetails(gun))
+  listEl.append(li)
+}
+  else if (gun.type == typeSet) {
   const li = document.createElement('li')
   li.innerText = gun.name 
   li.addEventListener('click', () => gunDetails(gun))
