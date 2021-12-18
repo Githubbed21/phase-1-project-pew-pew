@@ -6,7 +6,17 @@
       "name": "Beretta m9",
       "description": "Beretta M9 is a lightweight, semi-automatic pistol. The Beretta M9 has redundant automatic safety features to help prevent unintentional discharges. It is still in use today in the United States armed forces.",
       "img_url": "https://www.filepicker.io/api/file/bcCzaU04R9GQlU77WcfG",
-      "caliber": "9mm"
+      "caliber": "9mm",
+      "users": [
+        {
+          "id":1,
+          "username": "Dean"
+        },
+        {
+          "id":2,
+          "username": "Ponyboy"
+        }
+      ]
     },
     {
       "id": 2,
@@ -80,5 +90,48 @@
       "img_url": "https://th.bing.com/th/id/R.cae26a3300c4b1a248aa6dfe88467239?rik=wNtusZ%2b599DpTw&pid=ImgRaw&r=0",
       "caliber": "12.7 /x 99mm NATO (.50 BMG)"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Dean"
+    },
+    {
+      "id": 2,
+      "username": "Ponyboy"
+    },
+    {
+      "id": 3,
+      "username": "Cool Runnins"
+    },
+    {
+      "id": 4,
+      "username": "Frank Duke"
+    },
+    {
+      "id": 5,
+      "username": "Nah"
+    },
+    {
+      "id": 6,
+      "username": "Jaime"
+    },
+    {
+      "id": 7,
+      "username": "Cearel Brain"
+    },
+    {
+      "id": 8,
+      "username": "Kyle"
+    },
+    {
+      "id": 9,
+      "username": "Chief"
+    },
+    {
+      "id": 10,
+      "username": "Bobby"
+    }
   ]
 }
+

@@ -19,11 +19,11 @@ var typeSet = 'All'
 const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
-const feild = document.querySelector('textarea')
+const currentUser = {"id":1, "username": "Dean"}
+// const feild = document.querySelector('textarea')
 // const backUp = feild.getAttribute('placeholder')
-const btn = document.querySelector('btn')
+// const btn = document.querySelector('btn')
 // const searchBar = document.querySelector('searchbar')
-// const currentUser = {'id':1, "username": 'Dean'}
 
 
 const getAllGuns = () => {
@@ -68,39 +68,47 @@ function settheType(arg) {
 
   }
 
-
 const gunDetails = (gun) => {
   while (gunNav.firstChild) gunNav.removeChild(gunNav.firstChild)
   const h2 = document.createElement('h2')
   h2.innerText = gun.name  
+
   const p = document.createElement('p')
   p.innerText = gun.description
+
   const img = document.createElement('img')
   img.src = gun.img_url
   img.width = 480
   img.border = 5
- 
-    gunNav.append(img, h2, p)
+
+  const button = document.createElement('button')
+  if (likeGun) {button.innerText = 'Like'} else {
+    button.innerText = 'Like'
   }
-  
-  const handleButtonClick = (gun, ul) => {
-    if (!likeGun(gun)) {
-      gun.push()
-      API.patch(gunsURL, gun.id, gun).then(makeLi(ul))
-    }
-    else {
-      gun.users = gun.users.filter(gnUsr => gnUsr.id !== currentUser.id)
-      API.patch( gun.id, gun).then(removeLi)
-    }
-    
-    const button = document.createElement('button')
-    if (likeGun) {button.innerText = 'Like'} else {
-      button.innerText = 'Liked'
-    }
-    const likeGun = (gun) => {
-      return gun.users.find(gunUsr => gunUsr.id === currentUser.id)
-    }
+
+  const usersUl = document.createElement('ul')
+  usersUl.id ='users-ul'
+  button.addEventListener('click', () => handleButtonClick(gun, usersUl))
+
+  gun.users.forEach(gunUser => {
+    const li = document.createElement('li')
+    li.innerText = gunUser.username
+    li.id =`user-${gunUser.id}`
+    usersUl.append(li)
+  })
+  gunNav.append(img, h2, p, button, usersUl)
+}
+
+const handleButtonClick = (gun, ul) => {
+  if (!likeGun(gun)) {
+    gun.users.push(currentUser)
+    API.patch(gunsURL, gun.id, gun).then(makeLi(ul))
   }
+  else {
+    gun.users = gun.users.filter(gnUsr => gnUsr.id !== currentUser.id)
+    API.patch(gunsURL, gun.id, gun).then(removeLi)
+  }
+}
   
   const makeLi = (ul) => {
     const li = document.createElement('li')
@@ -112,9 +120,10 @@ const gunDetails = (gun) => {
     const foundLi = document.querySelector(`#user-${currentUser.id}`)
     foundLi.remove()
   }
+  const likeGun = (gun) => {
+    return gun.users.find(gunUsr => gunUsr.id === currentUser.id)
+  }
 
-
-//const addComment =
 
 getAllTypes()
 getAllGuns()
