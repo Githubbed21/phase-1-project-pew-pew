@@ -15,13 +15,13 @@ const patch = (url, bodyObj) => {
 }
 const API = {get, patch}
 const gunsURL = 'http://localhost:3000/Guns/'
+const typeSet = 'Rifle'
 const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
 const feild = document.querySelector('textarea')
 const backUp = feild.getAttribute('placeholder')
 const btn = document.querySelector('btn')
-const button = document.querySelector('typeclick')
 // const searchBar = document.querySelector('searchbar')
 const currentUser = {'id':1, "username": 'Dean'}
 let gunsUrl = [];
@@ -29,11 +29,17 @@ let gunsUrl = [];
 const getAllGuns = () => {
   API.get(gunsURL).then(guns => guns.forEach(gun => gunPreview(gun)))
 }
+
+
+
 const gunPreview = (gun) => {
+
+  if (gun.type == typeSet) {
   const li = document.createElement('li')
   li.innerText = gun.name 
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
+  }
 }
 
 const getAllTypes = () => {
@@ -44,7 +50,13 @@ const typePreview = (type) => {
   li.innerText = type.type
   typeEl.append(li)
 }
+
 document.getElementById('type').addEventListener('click', typePreview)
+
+// guns.forEach(typePreview)
+// function logPistols(item){
+//   console.log(item.pistol);
+// }
 
 
 

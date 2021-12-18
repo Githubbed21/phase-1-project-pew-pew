@@ -1,12 +1,7 @@
-#type-panel {
-  text-align: center;
-  border: grey solid 1px;
-  padding: 1rem;
-  width: 15rem;
-  height: 30rem;
-  display: inline-grid;
-  margin: 1rem 2rem;
-  box-shadow: 3px 4px #e04b52;
+#type-pane {
+  border: 2px solid #333;
+  padding: 10px 10px;
+  box-shadow: 3px 4px grey;
 }
 
 #list-panel {
@@ -36,7 +31,7 @@ textarea {
 }
 input [type='submit'],
 button {
-  padding: 10xp 15px;
+  padding: 10px 15px;
   border: none;
   outline: none;
   border-radius: 5px;
