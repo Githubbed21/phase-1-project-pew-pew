@@ -7,7 +7,7 @@ const get = (url) => {
   return fetch(url).then(resp => resp.json())
 }
 const patch = (url, id, bodyObj) => {
-  return fetch(url+ id, {
+  return fetch(url + id, {
     method: "PATCH",
     headers: apiHeader,
     body: JSON.stringify(bodyObj)
@@ -35,7 +35,7 @@ const gunPreview = (gun) => {
 if (typeSet == "All") {
   const li = document.createElement('li')
   li.innerText = gun.name 
-  li.addEventListener('click', () => gunDetails(gun, gunDetails))
+  li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
 //  console.log(gun.name);
 }
