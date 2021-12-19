@@ -1,5 +1,5 @@
 {
-  "Guns":[
+  "Guns": [
     {
       "id": 1,
       "type": "Pistol",
@@ -9,11 +9,7 @@
       "caliber": "9mm",
       "users": [
         {
-          "id":1,
-          "username": "Dean"
-        },
-        {
-          "id":2,
+          "id": 2,
           "username": "Ponyboy"
         }
       ]
@@ -79,12 +75,12 @@
       "type": "Rifle",
       "name": ".30-6",
       "description": "The .30-06 Springfield is one of the oldest and most popular cartridges in American firearm’s history.The 30 refers to the caliber of the bullet in inches. The 06 refers to the year the cartridge was adopted, 1906.  Most commonly used for hunting larger game, this round remains stable for up to 3000 yards.",
-      "img_url": "https://th.bing.com/th/id/R.63e2338ef635d092e19d5363263480b2?rik=PWOj9zKfo7hkmQ&riu=http%3a%2f%2fmedia.liveauctiongroup.net%2fi%2f20859%2f19846431_2.jpg%3fv%3d8D14AB0D92EC0D0&ehk=BLyZZLSfp5fb24jsgGP%2bq%2bZJkpHup2qPoNRqZJFmtk4%3d&risl=&pid=ImgRaw&r=0", 
+      "img_url": "https://th.bing.com/th/id/R.63e2338ef635d092e19d5363263480b2?rik=PWOj9zKfo7hkmQ&riu=http%3a%2f%2fmedia.liveauctiongroup.net%2fi%2f20859%2f19846431_2.jpg%3fv%3d8D14AB0D92EC0D0&ehk=BLyZZLSfp5fb24jsgGP%2bq%2bZJkpHup2qPoNRqZJFmtk4%3d&risl=&pid=ImgRaw&r=0",
       "caliber": "30 ot 6"
     },
     {
       "id": 10,
-      "type":"Rifle",
+      "type": "Rifle",
       "name": "Barrett",
       "description": "The Barrett . 50 BMG is commonly used in out military today as a sniper rifle or anti matrial assult with explosive ordiance. This rifle is also avaliable for civilian use. This rifle is capible of making accurate shots up to a mile long with the right person being the trigger. At those distance many other factors come into play such as windage, hummidity and elavation.",
       "img_url": "https://th.bing.com/th/id/R.cae26a3300c4b1a248aa6dfe88467239?rik=wNtusZ%2b599DpTw&pid=ImgRaw&r=0",
@@ -134,4 +130,3 @@
     }
   ]
 }
-

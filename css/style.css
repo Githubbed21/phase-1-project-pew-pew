@@ -3,6 +3,10 @@ body {
   grid-template-columns: 2fr 8fr;
 }
 
+#list {
+  cursor: pointer;
+}
+
 /*
 
 #type-pane {

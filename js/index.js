@@ -6,8 +6,8 @@ const apiHeader = {
 const get = (url) => {
   return fetch(url).then(resp => resp.json())
 }
-const patch = (url, bodyObj) => {
-  return fetch(url+ {
+const patch = (url, id, bodyObj) => {
+  return fetch(url+ id, {
     method: "PATCH",
     headers: apiHeader,
     body: JSON.stringify(bodyObj)
@@ -35,7 +35,7 @@ const gunPreview = (gun) => {
 if (typeSet == "All") {
   const li = document.createElement('li')
   li.innerText = gun.name 
-  li.addEventListener('click', () => gunDetails(gun))
+  li.addEventListener('click', () => gunDetails(gun, gunDetails))
   listEl.append(li)
 //  console.log(gun.name);
 }
@@ -51,6 +51,7 @@ if (typeSet == "All") {
 const getAllTypes = () => {
   API.get(gunsURL).then (type => type.forEach(type => typePreview(type)))
 }
+
 const typePreview = (type) => {
   const li = document.createElement('li')
   li.innerText = type.type
@@ -63,8 +64,8 @@ function settheType(arg) {
   typeSet = arg;
   while (listEl.firstChild) listEl.removeChild(listEl.firstChild)
   // return arg
-  getAllGuns()
-  console.log(typeSet);
+  // getAllGuns()
+  // console.log(typeSet);
 
   }
 
@@ -83,7 +84,7 @@ const gunDetails = (gun) => {
 
   const button = document.createElement('button')
   if (likeGun) {button.innerText = 'Like'} else {
-    button.innerText = 'Like'
+    button.innerText = 'Liked'
   }
 
   const usersUl = document.createElement('ul')
