@@ -10,7 +10,8 @@
       "users": [
         {
           "id": 2,
-          "username": "Ponyboy"
+          "username": "Ponyboy",
+          "comment" : "This was great, five stars."        
         }
       ]
     },
@@ -24,7 +25,8 @@
       "users": [
         {
           "id": 10,
-          "username": "Brenty"
+          "username": "Brenty",
+          "comment" : "This was great, five stars."        
         }
       ]
     },
@@ -38,11 +40,14 @@
       "users": [
         {
           "id": 9,
-          "username": "Chief"
+          "username": "Chief",
+          "comment" : "This was not so great, zero stars."
+          
         },
         {
           "id": 1,
-          "username": "Dean"
+          "username": "Dean",
+          "comment" : "This was great, five stars."        
         }
       ]
     },
@@ -56,7 +61,8 @@
       "users": [
         {
           "id": 8,
-          "username": "Kyle"
+          "username": "Kyle the spy",
+          "comment" : "This was great, but too much python for me."        
         }
       ]
     },
@@ -70,7 +76,8 @@
       "users": [
         {
           "id": 7,
-          "username": "Cearel Brain"
+          "username": "Cearel Brain",
+          "comment" : "This was great, five stars."        
         }
       ]
     },
@@ -84,7 +91,8 @@
       "users": [
         {
           "id": 7,
-          "username": "Cearel Brain"
+          "username": "Cearel Brain",
+          "comment" : "This was great, five stars."        
         }
       ]
     },
@@ -98,7 +106,8 @@
       "users": [
         {
           "id": 6,
-          "username": "Jaime Diaz"
+          "username": "Jaime Diaz",
+          "comment" : "This was great, five stars."        
         }
       ]
     },
@@ -112,7 +121,8 @@
       "users": [
         {
           "id": 4,
-          "username": "Frank Duke"
+          "username": "Frank Duke",
+          "comment" : "This was great, five stars."        
         }
       ]
     },
@@ -126,7 +136,8 @@
       "users": [
         {
           "id": 3,
-          "username": "Cool Runnins"
+          "username": "Cool Runnins",
+          "comment" : "This was great, five stars."        
         }
       ]
     },
@@ -140,7 +151,8 @@
       "users": [
         {
           "id": 2,
-          "username": "Ponyboy"
+          "username": "Ponyboy",
+          "comment" : "This was great, five stars."        
         }
       ]
     }
@@ -176,7 +188,7 @@
     },
     {
       "id": 8,
-      "username": "Kyle"
+      "username": "Kyle the spy"
     },
     {
       "id": 9,
