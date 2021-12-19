@@ -1,10 +1,19 @@
 body {
   display: grid;
   grid-template-columns: 2fr 8fr;
+  background-color: oldlace;
 }
 
 #list {
   cursor: pointer;
+}
+
+#type {
+  cursor: pointer;
+}
+button {
+  color: azure;
+  background-color: grey;
 }
 
 /*

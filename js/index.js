@@ -41,7 +41,7 @@ if (typeSet == "All") {
 }
   else if (gun.type == typeSet) {
   const li = document.createElement('li')
-  li.innerText = gun.name 
+  li.innerText = gun.name
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
 //  console.log(gun.name);
@@ -62,10 +62,11 @@ const typePreview = (type) => {
 function settheType(arg) {
   
   typeSet = arg;
+  console.log(typeSet);
   while (listEl.firstChild) listEl.removeChild(listEl.firstChild)
-  // return arg
-  // getAllGuns()
-  // console.log(typeSet);
+  //return arg
+   getAllGuns()
+   
 
   }
 
@@ -82,6 +83,8 @@ const gunDetails = (gun) => {
   img.width = 480
   img.border = 5
 
+  
+
   const button = document.createElement('button')
   if (likeGun) {button.innerText = 'Like'} else {
     button.innerText = 'Liked'
@@ -97,8 +100,13 @@ const gunDetails = (gun) => {
     li.id =`user-${gunUser.id}`
     usersUl.append(li)
   })
+
   gunNav.append(img, h2, p, button, usersUl)
+
+/** gunNav.append(img, h2, p) **/
 }
+
+
 
 const handleButtonClick = (gun, ul) => {
   if (!likeGun(gun)) {
