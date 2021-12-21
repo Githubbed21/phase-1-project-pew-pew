@@ -28,20 +28,22 @@ const getAllGuns = () => {
 
 
 const gunPreview = (gun) => {
-if (typeSet == "All") {
+// if (typeSet == "All") 
+if (gun.type == typeSet || typeSet == "All")
+{
   const li = document.createElement('li')
   li.innerText = gun.name 
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
 
-}
+} /**
   else if (gun.type == typeSet) {
     const li = document.createElement('li')
     li.innerText = gun.name
     li.addEventListener('click', () => gunDetails(gun))
     listEl.append(li)
 
-  }
+  }  */
 }
 
 const getAllTypes = () => {
@@ -129,5 +131,5 @@ const handleButtonClick = (gun, ul) => {
   }
 
 
-getAllTypes()
+// getAllTypes()
 getAllGuns()
