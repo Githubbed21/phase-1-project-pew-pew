@@ -8,12 +8,26 @@
 <body>
 
 	<div id="list-panel">
+
+		<h2>Dropdown Filter</h2>
+		<ul id="drop-type">
+			<select name="gun-types" id="gun-types" onchange="settheType(this.value)">
+				<option value="All">All</option>
+				<option value="Pistol">Pistol</option>
+				<option value="Rifle">Rifle</option>
+			</select>
+		</ul>
+
     <h2>Filter Guns by</h2>
 		<ul id="type">
 		</ul>
 			
     <h2>Gun Selection</h2>
 		<ul id="list">
+		</ul>
+
+		<h2>Instructions</h2>
+		<ul id="instructions">Clicky here here here.
 		</ul>
 
 	</div>

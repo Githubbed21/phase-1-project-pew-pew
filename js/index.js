@@ -58,6 +58,8 @@ const typePreview = (type) => {
 function settheType(arg) {
   
   typeSet = arg;
+  console.log("Type Changed");
+
   while (listEl.firstChild) listEl.removeChild(listEl.firstChild)
    getAllGuns()
    
