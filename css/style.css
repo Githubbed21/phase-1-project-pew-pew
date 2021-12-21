@@ -1,19 +1,47 @@
 body {
   display: grid;
   grid-template-columns: 2fr 8fr;
-  background-color: oldlace;
+}
+body {
+  background-image: url(https://i.pinimg.com/originals/68/c2/8a/68c28abf34b598811ddfcb1fd0347d13.jpg);
+  background-image: url(https://th.bing.com/th/id/OIP.dwWOhk0YlbLUpEIPV2CFXgHaEo?w=268&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #list {
   cursor: pointer;
+  font-family: 'Franklin Gothic Medium';
+  color: whitesmoke;
 }
 
 #type {
   cursor: pointer;
+  font-family: 'Franklin Gothic Medium';
+  color: whitesmoke;
+}
+
+h2 {
+  font-weight: lighter;
+  font-family: monospace;
+  color: ghostwhite;
+}
+
+p {
+  font-family: serif;
+  color: ghostwhite;
+}
+
+#users-ul {
+  font-weight: bolder;
+  font: medium;
+  color: ghostwhite;
 }
 button {
-  color: azure;
-  background-color: grey;
+  color: black;
+  background-color: ghostwhite;
 }
 
 /*

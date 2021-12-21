@@ -2,12 +2,15 @@
 
 **Version 1.0.0**
 
-## Usage
+## Installation
 
-```
-This is a simple website that allows you to learn a information about common weapons.
-This website does this by
-```
+`To launch the JSON server and be able to interact with the website first run json-server Then type --watch db.json in your terminal `
+
+## Discription
+
+`This is a simple website that allows you to learn a information about common weapons. Search through types of guns by selectiing a type of gun or selecting a gun itself. This website does this by`
+
+## Usage
 
 - Rendering images of guns
 - Allowing you to search between Rifles or Pistols

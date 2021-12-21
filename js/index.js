@@ -15,15 +15,11 @@ const patch = (url, id, bodyObj) => {
 }
 const API = {get, patch}
 const gunsURL = 'http://localhost:3000/Guns/'
-var typeSet = 'All'
+let typeSet = 'All'
 const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
 const currentUser = {"id":1, "username": "Dean"}
-// const feild = document.querySelector('textarea')
-// const backUp = feild.getAttribute('placeholder')
-// const btn = document.querySelector('btn')
-// const searchBar = document.querySelector('searchbar')
 
 
 const getAllGuns = () => {
@@ -37,14 +33,14 @@ if (typeSet == "All") {
   li.innerText = gun.name 
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
-//  console.log(gun.name);
+
 }
   else if (gun.type == typeSet) {
-  const li = document.createElement('li')
-  li.innerText = gun.name
-  li.addEventListener('click', () => gunDetails(gun))
-  listEl.append(li)
-//  console.log(gun.name);
+    const li = document.createElement('li')
+    li.innerText = gun.name
+    li.addEventListener('click', () => gunDetails(gun))
+    listEl.append(li)
+
   }
 }
 
@@ -62,9 +58,7 @@ const typePreview = (type) => {
 function settheType(arg) {
   
   typeSet = arg;
-  console.log(typeSet);
   while (listEl.firstChild) listEl.removeChild(listEl.firstChild)
-  //return arg
    getAllGuns()
    
 
@@ -82,6 +76,7 @@ const gunDetails = (gun) => {
   img.src = gun.img_url
   img.width = 480
   img.border = 5
+
 
   
 
@@ -102,8 +97,6 @@ const gunDetails = (gun) => {
   })
 
   gunNav.append(img, h2, p, button, usersUl)
-
-/** gunNav.append(img, h2, p) **/
 }
 
 

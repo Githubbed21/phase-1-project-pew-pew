@@ -1,0 +1,23 @@
+{
+  "name": "phase-1-project-pew-pew",
+  "version": "1.0.0",
+  "description": "**Version 1.0.0**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Githubbed21/phase-1-project-pew-pew.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Githubbed21/phase-1-project-pew-pew/issues"
+  },
+  "homepage": "https://github.com/Githubbed21/phase-1-project-pew-pew#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
