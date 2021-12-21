@@ -28,6 +28,9 @@ h2 {
   font-family: monospace;
   color: ghostwhite;
 }
+h1 {
+  color: ghostwhite;
+}
 
 p {
   font-family: serif;
@@ -39,9 +42,13 @@ p {
   font: medium;
   color: ghostwhite;
 }
+#instructions {
+  color: ghostwhite;
+}
 button {
   color: black;
   background-color: ghostwhite;
+  text-indent: unset;
 }
 
 /*

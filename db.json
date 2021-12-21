@@ -3,7 +3,6 @@
     {
       "id": 1,
       "type": "Pistol",
-      "type": "All",
       "name": "Beretta m9",
       "description": "Beretta M9 is a lightweight, semi-automatic pistol. The Beretta M9 has redundant automatic safety features to help prevent unintentional discharges. It is still in use today in the United States armed forces.",
       "img_url": "https://www.filepicker.io/api/file/bcCzaU04R9GQlU77WcfG",
@@ -25,7 +24,7 @@
       "users": [
         {
           "id": 10,
-          "username": "Brenty"
+          "username": "Brent The Bear"
         }
       ]
     },
@@ -85,7 +84,7 @@
       "users": [
         {
           "id": 7,
-          "username": "Cearel Brain"
+          "username": "Cereal Brain"
         }
       ]
     },
@@ -103,7 +102,7 @@
         },
         {
           "id": 1,
-          "username": "Dean"
+          "username": "That Guy"
         }
       ]
     },
@@ -132,6 +131,10 @@
         {
           "id": 3,
           "username": "Cool Runnins"
+        },
+        {
+          "id": 1,
+          "username": "That Guy"
         }
       ]
     },
@@ -146,6 +149,10 @@
         {
           "id": 2,
           "username": "Ponyboy"
+        },
+        {
+          "id": 1,
+          "username": "That Guy"
         }
       ]
     }
@@ -177,7 +184,7 @@
     },
     {
       "id": 7,
-      "username": "Cearel Brain"
+      "username": "Cereal Brain"
     },
     {
       "id": 8,
@@ -189,7 +196,7 @@
     },
     {
       "id": 10,
-      "username": "Brenty"
+      "username": "Brent The Bear"
     }
   ]
 }

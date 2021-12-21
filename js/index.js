@@ -19,16 +19,14 @@ let typeSet = 'All'
 const typeEl = document.querySelector('#type')
 const listEl = document.querySelector('#list')
 const gunNav = document.querySelector('#gun-nav')
-const currentUser = {"id":1, "username": "Dean"}
+const currentUser = {"id":1, "username": "That Guy"}
 
 
 const getAllGuns = () => {
   API.get(gunsURL).then(guns => guns.forEach(gun => gunPreview(gun)))
 }
 
-
 const gunPreview = (gun) => {
-
 if (gun.type == typeSet || typeSet == "All")
 {
   const li = document.createElement('li')
@@ -36,7 +34,7 @@ if (gun.type == typeSet || typeSet == "All")
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
 
-} 
+  } 
 }
 
 const getAllTypes = () => {
@@ -51,18 +49,17 @@ const typePreview = (type) => {
 }
 
 function settheType(arg) {
-  
   typeSet = arg;
-  console.log("Type Changed");
 
   while (listEl.firstChild) listEl.removeChild(listEl.firstChild)
    getAllGuns()
-   
-
   }
 
 const gunDetails = (gun) => {
   while (gunNav.firstChild) gunNav.removeChild(gunNav.firstChild)
+  const h1 = document.createElement('h1')
+  h1.innerText = gun.name  
+  
   const h2 = document.createElement('h2')
   h2.innerText = gun.name  
 
@@ -74,14 +71,10 @@ const gunDetails = (gun) => {
   img.width = 480
   img.border = 5
 
-
-  
-
   const button = document.createElement('button')
   if (likeGun) {button.innerText = 'Like'} else {
     button.innerText = 'Liked'
   }
-
   const usersUl = document.createElement('ul')
   usersUl.id ='users-ul'
   button.addEventListener('click', () => handleButtonClick(gun, usersUl))
@@ -93,10 +86,8 @@ const gunDetails = (gun) => {
     usersUl.append(li)
   })
 
-  gunNav.append(img, h2, p, button, usersUl)
+  gunNav.append(h1, img, p, button, usersUl)
 }
-
-
 
 const handleButtonClick = (gun, ul) => {
   if (!likeGun(gun)) {
@@ -108,7 +99,7 @@ const handleButtonClick = (gun, ul) => {
     API.patch(gunsURL, gun.id, gun).then(removeLi)
   }
 }
-  
+
   const makeLi = (ul) => {
     const li = document.createElement('li')
     li.innerText = currentUser.username
@@ -122,7 +113,5 @@ const handleButtonClick = (gun, ul) => {
   const likeGun = (gun) => {
     return gun.users.find(gunUsr => gunUsr.id === currentUser.id)
   }
-
-
 // getAllTypes()
 getAllGuns()
