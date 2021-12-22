@@ -8,7 +8,7 @@
 
 ## Discription
 
-`This is a simple website that allows you to learn a information about common weapons. Search through types of guns by selectiing a type of gun or selecting a gun itself. This website does this by`
+`This is a simple website that allows you to learn a information about common weapons. DB.JSON stores all the information of the listed guns. Search through types of guns by selectiing a type of gun or selecting a gun itself. This website does this by`
 
 ## Usage
 

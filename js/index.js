@@ -33,7 +33,6 @@ if (gun.type == typeSet || typeSet == "All")
   li.innerText = gun.name 
   li.addEventListener('click', () => gunDetails(gun))
   listEl.append(li)
-
   } 
 }
 
@@ -60,24 +59,24 @@ const gunDetails = (gun) => {
   const h1 = document.createElement('h1')
   h1.innerText = gun.name  
   
-  const h2 = document.createElement('h2')
+const h2 = document.createElement('h2')
   h2.innerText = gun.name  
 
-  const p = document.createElement('p')
+const p = document.createElement('p')
   p.innerText = gun.description
 
-  const img = document.createElement('img')
+const img = document.createElement('img')
   img.src = gun.img_url
   img.width = 480
   img.border = 5
 
-  const button = document.createElement('button')
+const button = document.createElement('button')
   if (likeGun) {button.innerText = 'Like'} else {
     button.innerText = 'Liked'
   }
   const usersUl = document.createElement('ul')
-  usersUl.id ='users-ul'
-  button.addEventListener('click', () => handleButtonClick(gun, usersUl))
+    usersUl.id ='users-ul'
+    button.addEventListener('click', () => handleButtonClick(gun, usersUl))
 
   gun.users.forEach(gunUser => {
     const li = document.createElement('li')
@@ -89,12 +88,12 @@ const gunDetails = (gun) => {
   gunNav.append(h1, img, p, button, usersUl)
 }
 
-const handleButtonClick = (gun, ul) => {
-  if (!likeGun(gun)) {
+  const handleButtonClick = (gun, ul) => {
+    if (!likeGun(gun)) {
     gun.users.push(currentUser)
     API.patch(gunsURL, gun.id, gun).then(makeLi(ul))
   }
-  else {
+    else {
     gun.users = gun.users.filter(gnUsr => gnUsr.id !== currentUser.id)
     API.patch(gunsURL, gun.id, gun).then(removeLi)
   }

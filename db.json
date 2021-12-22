@@ -24,7 +24,7 @@
       "users": [
         {
           "id": 10,
-          "username": "Brent The Bear"
+          "username": "Brenty"
         }
       ]
     },
@@ -39,10 +39,6 @@
         {
           "id": 9,
           "username": "Chief"
-        },
-        {
-          "id": 1,
-          "username": "Dean"
         }
       ]
     },
@@ -84,7 +80,7 @@
       "users": [
         {
           "id": 7,
-          "username": "Cereal Brain"
+          "username": "Cearel Brain"
         }
       ]
     },
@@ -99,10 +95,6 @@
         {
           "id": 6,
           "username": "Jaime Diaz"
-        },
-        {
-          "id": 1,
-          "username": "That Guy"
         }
       ]
     },
@@ -131,10 +123,6 @@
         {
           "id": 3,
           "username": "Cool Runnins"
-        },
-        {
-          "id": 1,
-          "username": "That Guy"
         }
       ]
     },
@@ -149,10 +137,6 @@
         {
           "id": 2,
           "username": "Ponyboy"
-        },
-        {
-          "id": 1,
-          "username": "That Guy"
         }
       ]
     }
@@ -184,7 +168,7 @@
     },
     {
       "id": 7,
-      "username": "Cereal Brain"
+      "username": "Cearel Brain"
     },
     {
       "id": 8,
@@ -196,7 +180,7 @@
     },
     {
       "id": 10,
-      "username": "Brent The Bear"
+      "username": "Brenty"
     }
   ]
 }
